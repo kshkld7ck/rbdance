@@ -517,6 +517,9 @@ main, #form {
     -ms-flex-align:center;
         align-items:center;
 }
+.reviews__wrapper img {
+  height:33px;
+}
 main iframe {
   widows: 465px;
   border-radius:10px;
@@ -527,7 +530,7 @@ main iframe {
 }
 .main__row {
   margin-top:33px;
-  margin-bottom:106px;
+  /* margin-bottom:40px; */
 }
 .blue__button {
   background: #0ABDF0;
@@ -605,7 +608,10 @@ text-align:center;
       -ms-flex-align: center;
           align-items: center;
 }
+main {
+  background: rgba(10, 189, 240, 0.05)
 
+}
 .enjoy__block {
   background: rgba(255, 255, 255, 0.76);
   height: 600px;
@@ -882,7 +888,7 @@ display: flex;
     -ms-flex-pack: center;
         justify-content: center;
 text-align: center;
-padding-top:42px;
+padding-top:70px;
   color:#fff;
   font-size: 22px;
   line-height: 27px;
@@ -900,7 +906,8 @@ padding-top:42px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top:85px;
+  margin-top:40px;
+  margin-bottom:30px;
 }
 .footer__links div {
   display:-webkit-box;
@@ -934,4 +941,64 @@ padding-top:42px;
 .carousel {
   max-width: 770px;
   overflow-x: scroll;
+}
+#types {
+  padding:80px 0px;
+}
+.types__wrapper {
+  margin-top:80px;
+}
+.types__block {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
+  border-radius:20px;
+  padding:32px 24px;
+  text-align: center;
+width:70%;
+margin:0 auto;
+transition:.3s;
+margin-bottom:40px;
+}
+/* .types__block span {
+  padding:0 20px;
+  border-left:2px solid rgba(254, 1, 1, 0.29);
+} */
+.types__block span:last-child {
+  border-right:none;
+}
+span.first {
+  border-left:none;
+  padding-left:0;
+}
+.types__block strong {
+  display:block;
+  text-align: center;
+  font-size:18px;
+  margin-bottom:10px;
+}
+.types__block:hover {
+  transition: .3s;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+}
+nav a img {
+  width:30px;
+  
+}
+.instruction {
+  border:none;
+  border-bottom:2px dashed #fff;
+  margin:0 auto;
+  margin-top:20px;
+  display:flex;
+  background:none;
+  color:#fff;
+  font-weight:bold;
+  font-size:18px;
+  cursor:pointer;
+  padding:0px 0px 5px 0px;
+}
+.instruction:hover {
+  border-bottom:2px dashed transparent
+}
+:focus, :active {
+  outline:none;
 }
