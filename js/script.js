@@ -6,7 +6,7 @@ $(document).ready(function(){
         $('.contacts__map').html(data);
     })
 
-
+if (window.innerWidth > 1080) {
     $(window).on('scroll', function(){
         var topMenu = $("nav"),
           topMenuHeight = topMenu.outerHeight()+15,
@@ -25,7 +25,7 @@ $(document).ready(function(){
           menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active");
       })
 
-      
+    }
 
       $('#send').click(function () {
         let name = $('input[name="name"]').val();
