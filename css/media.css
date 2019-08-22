@@ -131,7 +131,7 @@
             flex-wrap:wrap;
     }
     h3 {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 46px;
     }
     .header__block h2 {
@@ -163,6 +163,13 @@
     .carousel__description {
         margin-right:0
     }
+    .reasons__block img {
+        width:100px;
+        height:100px;
+    }
+    .reasons__block p {
+        font-size:16px;
+    }
 }
 @media (max-width:466px) {
     main iframe {
@@ -184,7 +191,10 @@
     .carousel__description p:first-child {
         padding-bottom: 43px;
         }
- 
+        .carousel__description {
+            max-width:110px;
+            min-width:110px;
+          } 
 }
 body {
     overflow-x:hidden
