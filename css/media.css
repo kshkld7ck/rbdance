@@ -1,0 +1,191 @@
+@media (max-width:1080px) and (min-width:768px) {
+
+    .container {
+        min-width:100%;
+        max-width:100%;
+        padding:0 20px;
+    }
+    .header__block .left__top__arrow {
+        left: 20px;
+      }
+      
+      .header__block .right__top__arrow {
+        right: 20px;
+      }
+      
+      .header__block .left__bottom__arrow {
+        left: 20px;
+        
+      }
+      
+      .header__block .right__bottom__arrow {
+        right: 20px;
+      }
+      nav ul a {
+          font-size:14px;
+          width:125px !important
+      }
+      .nav__container li.active:after {
+          bottom:-42px;
+      }
+      nav a img {
+          width:34px;
+      }
+      #contacts iframe {
+          width:380px;
+          height:300px;
+      }
+      .contacts__list p {
+          font-size:18px;
+      }
+}
+@media (max-width:768px) {
+
+    .container {
+        min-width:100%;
+        max-width:100%;
+        padding:0 20px;
+    }
+    nav {
+        display: none
+    }
+    .contacts__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column
+    }
+    #contacts iframe {
+        width:500px;
+        height:300px;
+    }
+    .review__block {
+        width:100%;
+    }
+    .form__block input, textarea {
+        width:100%;
+    }
+    .form__block button {
+        width: 50%;
+        margin: 0 auto;
+        margin-top:50px;
+    }
+    .main__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    margin-bottom:40px;}
+    .main__text {
+        width:100%;
+    }
+    header {
+        height:500px;
+        
+    }
+    main iframe {
+        margin-top:20px;
+    }
+    .header__block {
+        height:300px;
+    }
+    .header__block .left__top__arrow {
+        left: 20px;
+        top:30px;
+      }
+      
+      .header__block .right__top__arrow {
+        right: 20px;
+        top:30px;
+      }
+      
+      .header__block .left__bottom__arrow {
+        left: 20px;
+        bottom:30px;
+        
+      }
+      
+      .header__block .right__bottom__arrow {
+        right: 20px;
+        bottom:30px;
+      }
+      .reasons__block {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 50px;
+        }
+    .reasons__row {
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+    .header__block h2 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+    
+    }
+    .footer__links {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top:40px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start
+    }
+    .footer__links div {
+        margin-bottom:20px
+    }
+    .footer__links div div {
+        margin-bottom:0px;
+    }
+    .contacts__list p {
+        font-size:18px;
+    margin-bottom:10px;
+    }
+    .carousel__description {
+        margin-right:0
+    }
+}
+@media (max-width:466px) {
+    main iframe {
+        width:100%;
+    }
+    #contacts iframe {
+        width:100% !important;
+    }
+    #teachers img {
+        width:170px;
+        height:170px;
+    }
+    #teachers p {
+        margin:15px 0px;
+    }
+    .carousel__description {
+      padding-top:198px;
+    } 
+    .carousel__description p:first-child {
+        padding-bottom: 43px;
+        }
+ 
+}
+body {
+    overflow-x:hidden
+}

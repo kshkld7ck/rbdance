@@ -1,0 +1,161 @@
+.container {
+    max-width:1080px;
+    min-width:1080px;
+    width:100%;
+    margin:0 auto;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+header {
+    height:800px;
+    background:url('../images/header.png') no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+}
+.header__block {
+    background: rgba(255, 255, 255, 0.76);
+    height:600px;
+    width:100%;
+    
+}
+.header__block .container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height:100%;
+    position: relative;
+}
+.header__block h1 {
+
+font-size: 72px;
+line-height: 88px;
+color: #000000;
+font-weight:800;
+text-shadow: -6px -6px 0px rgba(254, 1, 1, 0.29), 6px 6px 0px rgba(10, 189, 240, 0.29);
+}
+.header__block h2 {
+    font-size: 36px;
+line-height: 44px;
+font-weight:300;
+color: #000000;
+margin-top:10px;
+}
+.arrow {
+
+    border-left:6px solid #000;
+    border-top:6px solid #000;
+    position: absolute;
+    width:35px;
+    height:35px;
+ 
+}
+.arrow:after {
+    content:"";
+    position: absolute;
+    top:-12px;
+    width:29px;
+    height:29px;
+    border-left:6px solid rgba(10, 189, 240, 0.29);
+    border-top:6px solid rgba(10, 189, 240, 0.29);
+}
+.arrow:before {
+    content:"";
+    position: absolute;
+    top:0px;
+    left:-12px;
+    width:29px;
+    height:29px;
+    border-left:6px solid rgba(254, 1, 1, 0.29);
+    border-top:6px solid rgba(254, 1, 1, 0.29);
+}
+.left__top__arrow {
+    
+}
+.right__top__arrow {
+    transform:rotate(90deg);
+}
+.left__bottom__arrow {
+    transform:rotate(-90deg)
+}
+.right__bottom__arrow {
+    transform:rotate(180deg)
+}
+.header__block .left__top__arrow {
+    left:0;
+    top:120px;
+}
+.header__block .right__top__arrow {
+    right:0;
+    top:120px;
+}
+.header__block .left__bottom__arrow {
+    left:0;
+    bottom:120px;
+}
+.header__block .right__bottom__arrow {
+    right:0;
+    bottom:120px;
+}
+
+
+
+
+
+
+
+.glitch{
+    color:white;
+    font-size:100px;
+    position:relative;
+    width:400px;
+    margin:0 auto;
+  }
+  @keyframes noise-anim{
+    $steps:20;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip:rect(random(100)+px,9999px,random(100)+px,0);
+      }
+    }
+  }
+  .glitch:after{
+    content:attr(data-attr);
+    position:absolute;
+    left:2px;
+    text-shadow:-1px 0 red;
+    top:0;
+    color:white;
+    background:black;
+    overflow:hidden;
+    clip:rect(0,900px,0,0); 
+    animation:noise-anim 2s infinite linear alternate-reverse;
+  }
+  
+  @keyframes noise-anim-2{
+    $steps:20;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip:rect(random(100)+px,9999px,random(100)+px,0);
+      }
+    }
+  }
+  .glitch:before{
+    content:attr(data-attr);
+    position:absolute;
+    left:-2px;
+    text-shadow:1px 0 blue; 
+    top:0;
+    color:white;
+    background:black;
+    overflow:hidden;
+    clip:rect(0,900px,0,0); 
+    animation:noise-anim-2 3s infinite linear alternate-reverse;
+  }
